@@ -1,0 +1,2 @@
+1. https://github.com/h5bp/Front-end-Developer-Interview-Questions
+2. https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
