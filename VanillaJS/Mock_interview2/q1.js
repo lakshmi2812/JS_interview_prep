@@ -1,3 +1,4 @@
+//Write a function to add numbers in an array
 let arr = [1,2,5,7];
 
 function arrSum(arr){
@@ -10,7 +11,7 @@ function arrSum(arr){
 
 //Use reduce function to calculate array sum
 
-reduceArraySum = arr.reduce((accumulator, currentValue)=>accumulator*currentValue);
+reduceArraySum = arr.reduce((accumulator, currentValue)=>accumulator+currentValue);
 
 console.log("Array sum using reduce: ", reduceArraySum);
 
