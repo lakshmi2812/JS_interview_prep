@@ -9,7 +9,7 @@ function reverseString(str){
     reversedArr.push(subStr.split("").reverse().join(''))
   });
   //console.log(reversedArr);
-  let reversedStr = reversedArr.join(' ');
+  let reversedStr = reversedArr.join(' ').split(' ').reverse().join(' ');
   return reversedStr;
 }
 
