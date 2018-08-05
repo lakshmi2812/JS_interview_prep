@@ -6,8 +6,8 @@ without converting number to a string
 
 function findLength(num){
   let count = 0;
-  while(num > 10){
-    quotient = num/10;
+  while(num >= 10){
+    quotient = Math.floor(num/10);
     num = quotient;
     count++;
   }
@@ -15,4 +15,4 @@ function findLength(num){
     return count;
 }
 
-console.log(findLength(10,345));
+console.log(findLength(10345));
