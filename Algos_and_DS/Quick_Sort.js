@@ -1,32 +1,27 @@
-//[6,5,1,3,8,4,7,9,2]
 function quickSort(arr){
-  let n = arr.length-1;
-  let pivot = arr[n];
   let wall = 0;
-  let current = arr[wall];
-  let i = 0;
-  let swap;
-  let _swap;
-  //do this n-1 times at max
-  while(wall < n){
-    let i = wall;
-    current = arr[wall];
-    //console.log(current);
-    console.log(wall);
-    while(i < n){
-      if(pivot > arr[i]){
-        swap =  arr[i];
-        arr[i] = current;
-        current = swap;
-        wall++;
+  let currentElem;
+  let i;
+  let pivot;
+  //while wall does not reach the pivot
+  while(wall !== arr.length-1){
+    //one complete iteration of the array
+    pivot = arr[arr.length-1];
+    currentElem = arr[wall];
+    i = wall;
+    while(i < arr.length-1){
+      if(arr[i] > pivot){
+        i++;
       }
-      i++;
+      let swap = currentElem;
+      currentElem = arr[i];
+      arr[i] = swap;
+      wall++;
     }
-    _swap = current;
-    pivot = current;
-    current = _swap;
+    let swapper = pivot;
+    pivot = currentElem;
+    currentElem = swapper;
     wall++;
-    console.log(arr);
   }
   return arr;
 }

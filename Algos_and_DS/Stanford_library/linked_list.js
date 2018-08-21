@@ -64,8 +64,6 @@ class LinkedList{
       currentNode = currentNode.next;
     }
     currentNode.next = new Node(data);
-    this.tail = currentNode.next;
-    currentNode.next.next = null;
   }
 
   //copyList --> make a new LinkedList that is a copy of this LinkedList
